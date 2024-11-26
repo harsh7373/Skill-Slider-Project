@@ -13,93 +13,98 @@
             padding: 0;
         }
 
+        body {
+            background-color: #eeeff0;
+        }
+
         .container {
-            background-color: blue;
-            width: 100px;
-            height: 70px;
+            background-color: #c8c5c9;
+            width: 40%;
+           
             display: flex;
             overflow: hidden;
             justify-content: space-around;
+            border-radius: 10%;
 
         }
 
         .flex {
             display: flex;
             justify-content: center;
-            padding-top: 200px;
+            padding-top: 43vh;
+    width: 14vw;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .content {
-            background-color: black;
+            background-color: white;
             text-align: center;
-            width: 50px;
-            height: 50px;
-            margin-left: 25px;
-            margin-top: 10px;
+          margin: 15%;
             position: relative;
-            right: 0px;
             transition: all 2s;
+            
 
         }
 
         .btn {
-            width: 70px;
-            height: 40px;
-            background-color: white;
+            width: 22%;
+           
+            margin-left: 14%;
             border: 2px solid white;
-            border-radius: 30px;
-            position: relative;
-            right: 215px;
-            top: 17px;
+            border-radius: 70%;
+
 
         }
 
         .fa-js {
-            font-size: 64px;
+            font-size: 4em;
             position: relative;
-            bottom: 10px;
-            color: yellow;
-            right: 4px;
-            margin-top: 3px;
+            bottom: 3%;
+            color: #040404;
+            right: 2%;
+            margin-top: 5%;
+
 
         }
 
         .fa-html5 {
-            font-size: 64px;
-            background-color: white;
-            color: red;
+            font-size: 4em;
+
+            color: #040404;
         }
 
         .fa-css3-alt {
-            font-size: 64px;
-            background-color: white;
-            color: blue;
+            font-size: 4em;
+
+            color: #040404;
         }
 
-        .skills {
-            position: relative;
-            left: 725px;
-            top: 200px;
-            font-size: 18px;
+       
+        
+
+        .fa-arrow-right {
+            color: black;
+            background-color: white;
         }
     </style>
 </head>
 
 <body>
-    <div class="skills">MY SKILLS</div>
+    
     <div class="flex">
         <div class="container">
             <span class="content"><span class="fa-brands fa-js"></span></span>
             <span class="content"><i class="fa-brands fa-html5"></i></span>
             <span class="content"><i class="fa-brands fa-css3-alt"></i></span>
-            <span class="content">content4</span>
-            <button id="btn" class="fa-solid fa-arrow-right btn"></button>
+
 
         </div>
+        <button id="btn" class="fa-solid fa-arrow-right btn"></button>
     </div>
     <script>
         let btn = document.getElementById("btn");
-        let number = 0
+        let number = 1
         btn.addEventListener("click", function click() {
 
             number++
@@ -108,7 +113,7 @@
                 spans.style.right = 76 * number + "px"
             })
 
-            if (number == 4) {
+            if (number == 2) {
                 number = -1
             }
         });
